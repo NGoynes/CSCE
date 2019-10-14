@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="881.0" prefWidth="711.0" style="-fx-background-color: -fx-background-color: rgba(0, 100, 100, 0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane fx:id="topbar" layoutY="-1.0" prefHeight="88.0" prefWidth="711.0" style="-fx-background-color: #6c6c6c;">
+            <children>
+                <ImageView fx:id="btnTwo" fitHeight="55.0" fitWidth="55.0" layoutX="150.0" layoutY="13.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/two.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btnThree" fitHeight="55.0" fitWidth="55.0" layoutX="325.0" layoutY="13.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/three.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btnFour" fitHeight="62.0" fitWidth="55.0" layoutX="500.0" layoutY="13.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/four.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btnClose" fitHeight="31.0" fitWidth="32.0" layoutX="666.0" layoutY="14.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/close.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane fx:id="h_queryTwo" layoutY="107.0" prefHeight="788.0" prefWidth="711.0" style="-fx-background-color: #6c6c6c;" visible="false">
+            <children>
+                <JFXButton layoutX="288.0" layoutY="197.0" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #f9ddce; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Query!" textFill="#5e5e5e">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="114.0" layoutY="76.0" text="Actor Name:" textFill="#f9ddce">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="209.0" layoutY="296.0" text="List of Co-Stars With Input Appearances:" textFill="#f9ddce">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </Label>
+                <JFXTextArea focusColor="#f9ddce" layoutX="74.0" layoutY="315.0" prefHeight="398.0" prefWidth="563.0" unFocusColor="WHITE" />
+                <JFXTextField alignment="CENTER" focusColor="#f9ddce" layoutX="74.0" layoutY="95.0" unFocusColor="WHITE" />
+                <JFXTextField alignment="CENTER" focusColor="#f9ddce" layoutX="468.0" layoutY="89.0" unFocusColor="WHITE" />
+                <Label layoutX="435.0" layoutY="76.0" text="Number of Co-Star Appearances:" textFill="#f9ddce">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="queryFour3" fitHeight="31.0" fitWidth="23.0" layoutX="170.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/arrow.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane fx:id="h_queryThree" layoutY="107.0" prefHeight="398.0" prefWidth="711.0" style="-fx-background-color: #6c6c6c;" visible="false">
+            <children>
+                <JFXButton layoutX="289.0" layoutY="180.0" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #f9ddce; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Query!" textFill="#5e5e5e">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="313.0" layoutY="57.0" text="Actor Name:" textFill="#f9ddce">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="204.0" layoutY="277.0" text="Most Common Genre Actor Has Played In:" textFill="#f9ddce">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </Label>
+                <JFXTextField alignment="CENTER" focusColor="#f9ddce" layoutX="273.0" layoutY="76.0" unFocusColor="WHITE" />
+                <JFXTextField alignment="CENTER" focusColor="#f9ddce" layoutX="272.0" layoutY="296.0" unFocusColor="WHITE" />
+                <ImageView fx:id="queryFour31" fitHeight="31.0" fitWidth="23.0" layoutX="344.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/arrow.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane fx:id="h_queryFour" layoutY="107.0" prefHeight="788.0" prefWidth="711.0" style="-fx-background-color: #6c6c6c;" visible="false">
+            <children>
+                <JFXTextField alignment="CENTER" focusColor="#f9ddce" layoutX="271.0" layoutY="89.0" unFocusColor="WHITE" />
+                <JFXTextArea focusColor="#f9ddce" layoutX="76.0" layoutY="309.0" prefHeight="398.0" prefWidth="563.0" unFocusColor="WHITE" />
+                <Label layoutX="216.0" layoutY="290.0" text="Actors Who Have Played This Character:" textFill="#f9ddce">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font></Label>
+                <Label layoutX="295.0" layoutY="70.0" text="Character Name:" textFill="#f9ddce">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="290.0" layoutY="191.0" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #f9ddce; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Query!" textFill="#5e5e5e">
+                    <font>
+                        <Font name="Raleway Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+                <ImageView fx:id="queryFour32" fitHeight="31.0" fitWidth="23.0" layoutX="519.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/arrow.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
