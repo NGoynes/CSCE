@@ -9,7 +9,6 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.image.ImageView;
-import org.jetbrains.annotations.NotNull;
 
 
 public class Controller implements Initializable {
@@ -20,7 +19,7 @@ public class Controller implements Initializable {
     private AnchorPane h_queryTwo, h_queryThree, h_queryFour;
 
     @FXML
-    private void handleButtonAction(@NotNull MouseEvent event) {
+    private void handleButtonAction(MouseEvent event) {
         if(event.getTarget() == btnTwo) {
             h_queryTwo.setVisible(true);
             h_queryThree.setVisible(false);
